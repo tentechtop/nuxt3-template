@@ -23,6 +23,7 @@ export function getInfo () {
 }
 export function setInfo (userData = {}) {
   userData = JSON.stringify(userData)
+  //@ts-ignore
   return Cookies.set(InfoKey, userData, { expires: day, })
 }
 

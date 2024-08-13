@@ -1,3 +1,4 @@
+//@ts-ignore
 import Markdown from "markdown-it";
 import highlight from "highlight.js";
 
@@ -7,6 +8,7 @@ const mdOptions: Markdown.Options = {
     breaks: true,
     langPrefix: "language-",
     // 代码高亮
+    //@ts-ignore
     highlight(str, lang) {
         if (lang && highlight.getLanguage(lang)) {
             try {
